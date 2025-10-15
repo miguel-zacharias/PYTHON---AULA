@@ -1,13 +1,13 @@
-#feitoporzacharias
-import random
-print('Tente adivinhar o número entre 1 e 50!')
-segredo = random.randint(1, 50)
-while True:
-    palpite = int(input('Digite seu palpite: '))
-    if palpite > segredo:
-        print('Muito alto! Tente novamente.')
-    elif palpite < segredo:
-        print('Muito baixo! Tente novamente.')
-    else:
-        print('Parabéns! Você acertou!')
-        break
+# Exercício 10 — Precedência de Operadores
+a = int(input("Digite o valor de a: "))
+b = int(input("Digite o valor de b: "))
+c = int(input("Digite o valor de c: "))
+
+print(f"a + b * c = {a + b * c} (Multiplicação antes da soma)")
+print(f"(a + b) * c = {(a + b) * c} (Parênteses antes da multiplicação)")
+print(f"a ** b + c = {a ** b + c} (Exponenciação antes da soma)")
+print(f"a ** (b + c) = {a ** (b + c)} (Parênteses antes da exponenciação)")
+print(f"a + b / c = {a + b / c} (Divisão antes da soma)")
+print(f"(a + b) / c = {(a + b) / c} (Parênteses antes da divisão)")
+print(f"a % b + c * 2 = {a % b + c * 2} (Multiplicação antes da soma, resto antes da soma)")
+print(f"(a + b * c) ** 2 - a = {(a + b * c) ** 2 - a} (Multiplicação antes da soma, depois exponenciação, depois subtração)")

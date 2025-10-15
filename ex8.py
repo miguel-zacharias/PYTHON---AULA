@@ -1,11 +1,12 @@
-#feitoporzacharias
-maior = None
-menor = None
-for i in range(1, 6):
-    num = int(input(f'Digite o {i}o número: '))
-    if maior is None or num > maior:
-        maior = num
-    if menor is None or num < menor:
-        menor = num
-print(f'Maior valor: {maior}')
-print(f'Menor valor: {menor}')
+#feito por Miguel Zacharias
+# Exercício 8 — Combinação de Operadores Lógicos e Relacionais
+x = int(input("Digite o valor de x: "))
+y = int(input("Digite o valor de y: "))
+z = int(input("Digite o valor de z: "))
+
+print(f"x > y and y > z: {x > y and y > z}")
+print(f"x > y or y > z: {x > y or y > z}")
+print(f"x == y or x == z: {x == y or x == z}")
+print(f"x != y and y != z: {x != y and y != z}")
+print(f"not (x > y) and z > y: {not (x > y) and z > y}")
+print(f"(x > y and y > z) or (x == z): {(x > y and y > z) or (x == z)}")

@@ -1,7 +1,14 @@
-#feitoporzacharias
-n = int(input('Digite um número: '))
-soma = 0
-for i in range(1, n+1):
-    if i % 2 == 0:
-        soma += i
-print(f'Soma dos números pares entre 1 e {n}: {soma}')
+#feito por Miguel Zacharias
+# Solicita dois números inteiros
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+# Calcula os resultados
+div_real = num1 / num2
+div_int = num1 // num2
+dif = div_real - div_int
+
+# Exibe os resultados
+print(f"Divisão real: {div_real}")
+print(f"Divisão inteira: {div_int}")
+print(f"Diferença: {dif}")

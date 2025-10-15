@@ -1,14 +1,11 @@
-#feitoporzacharias
-n = int(input('Digite um número: '))
-primo = True
-if n < 2:
-    primo = False
-else:
-    for i in range(2, n):
-        if n % i == 0:
-            primo = False
-            break
-if primo:
-    print(f'O número {n} é primo.')
-else:
-    print(f'O número {n} não é primo.')
+# Exercício 6 — Operador Lógico OR
+A = input("Digite o valor de A (True/False): ") == "True"
+B = input("Digite o valor de B (True/False): ") == "True"
+C = input("Digite o valor de C (True/False): ") == "True"
+D = input("Digite o valor de D (True/False): ") == "True"
+
+print(f"A or B: {A or B}")
+print(f"C or D: {C or D}")
+print(f"A or B or C: {A or B or C}")
+print(f"A or B or C or D: {A or B or C or D}")
+print(f"(A or B) or (C or D): {(A or B) or (C or D)}")
